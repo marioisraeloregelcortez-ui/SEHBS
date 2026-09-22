@@ -199,3 +199,8 @@
 
 /* Hero science image centering */
 .hero{background-position:center center;background-repeat:no-repeat}
+
+/* Featured hero framing v2 */
+@media (min-width:901px){
+  .hero{min-height:520px;background-position:center center;background-size:cover}
+}
