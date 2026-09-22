@@ -2,10 +2,10 @@ window.SEHBS_DATA={
 featured: {
   category: "Ejercicio y salud",
   title: "12 semanas de entrenamiento multicomponente mejoran la composición corporal, la salud metabólica y el rendimiento físico en mujeres de mediana y mayor edad",
-  dek: "Artículo reciente con autoría de correspondencia de Mario Israel Oregel-Cortez, publicado en Sports (MDPI), que reporta mejoras en VO₂max, masa muscular, perfil metabólico y desempeño funcional, con un posible papel modulador de la adiposidad basal.",
+  dek: "Artículo recientemente publicado en Sports (MDPI), la investigación reporta mejoras en VO₂max, masa muscular, perfil metabólico y desempeño funcional, con un posible papel modulador de la adiposidad basal.",
   image: "assets/hero-women-exercise-science-hq.webp?v=1",
   href: "https://doi.org/10.3390/sports14050204",
-  source: "Sports (MDPI) · 2026 · Corresponding author: Mario Israel Oregel-Cortez"
+  source: "Sports (MDPI) · 2026 · Corresponding author: Dr. Mario Israel Oregel-Cortez"
 },
 weekly:{category:"Salud",title:"La actividad física y el cerebro: una relación que sigue generando nuevas preguntas",dek:"Una nota editorial para seguir la evidencia emergente sobre ejercicio, cognición y envejecimiento saludable.",image:"assets/img-brain.svg",href:"article.html?slug=actividad-fisica-cerebro"},
 latest:[
