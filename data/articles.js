@@ -9,7 +9,7 @@ featured: {
 },
 weekly:{category:"Salud",title:"La actividad física y el cerebro: una relación que sigue generando nuevas preguntas",dek:"Una nota editorial para seguir la evidencia emergente sobre ejercicio, cognición y envejecimiento saludable.",image:"assets/img-brain.svg",href:"article.html?slug=actividad-fisica-cerebro"},
 latest:[
-{category: "Ejercicio y salud", title: "Entrenamiento multicomponente y envejecimiento saludable en mujeres: hallazgos recientes desde Sports (MDPI)", date: "2026", image: "assets/ejercicio_y_salud_en_casa.png", href: "https://doi.org/10.3390/sports14050204"},
+{category: "Ejercicio y salud", title: "Entrenamiento multicomponente y envejecimiento saludable en mujeres: hallazgos recientes desde Sports (MDPI)", date: "2026", image: "assets/ChatGPT%20Image%2022%20sept%202026,%2001_44_04%20p.m..png", href: "https://doi.org/10.3390/sports14050204"},
 {category:"Rendimiento deportivo",title:"Series cluster y ondulantes: qué cambia cuando reorganizamos el descanso",date:"Edición de demostración",image:"assets/img-cycling.svg",href:"article.html?slug=cluster-vs-undulating"},
 {category:"Ejercicio y salud",title:"Programas multicomponente y envejecimiento activo: cómo leer la evidencia",date:"Edición de demostración",image:"assets/img-older-adults.svg",href:"article.html?slug=multicomponente-adultos-mayores"},
 {category:"Ciencias biomédicas",title:"Vesículas extracelulares: por qué están ganando protagonismo en medicina del ejercicio",date:"Edición de demostración",image:"assets/img-lab.svg",href:"article.html?slug=vesiculas-extracelulares"},
