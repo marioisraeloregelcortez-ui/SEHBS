@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+  <title id="t">Exercise and Health</title>
+  <desc id="d">Minimalist shadow-style illustration of an older woman exercising with dumbbells on the floor.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5FAFC"/>
+      <stop offset=".55" stop-color="#EAF5F3"/>
+      <stop offset="1" stop-color="#E7F0F8"/>
+    </linearGradient>
+    <linearGradient id="sil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A2E5B"/>
+      <stop offset="1" stop-color="#153F6D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E9E6B"/>
+      <stop offset="1" stop-color="#6FD1C6"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="930" cy="185" r="155" fill="#DDF1EE" opacity=".75"/>
+  <circle cx="1040" cy="480" r="190" fill="#E3EDF7" opacity=".72"/>
+  <ellipse cx="860" cy="565" rx="270" ry="42" fill="#AFC3D3" opacity=".22" filter="url(#soft)"/>
+
+  <text x="62" y="84" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="2.5" fill="#0A2E5B">EXERCISE &amp; HEALTH</text>
+  <rect x="62" y="110" width="86" height="6" rx="3" fill="#6FD1C6"/>
+
+  <g transform="translate(690 95)">
+    <!-- hair -->
+    <path d="M154 20c-42 0-71 27-71 64 0 14 4 26 11 37 5-20 18-37 40-48 21-11 48-14 76-4-6-30-27-49-56-49Z" fill="#DCE4EA"/>
+    <circle cx="183" cy="87" r="48" fill="url(#sil)"/>
+    <path d="M138 55c17-18 45-25 72-11" fill="none" stroke="#F4F7F9" stroke-width="7" stroke-linecap="round"/>
+    <path d="M114 80c-22 6-31 31-20 48 9 14 31 18 46 6-16-13-24-30-26-54Z" fill="#C8D4DD"/>
+    <path d="M91 126c-18 7-25 27-15 41 9 12 28 14 39 4" fill="#C8D4DD" opacity=".95"/>
+
+    <!-- neck / torso -->
+    <path d="M168 126c-10 17-13 30-12 46" fill="none" stroke="url(#sil)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M142 170c-50 29-78 75-81 132-4 58 20 103 64 136 38 29 86 41 135 27 51-14 89-53 101-103 12-49-2-99-34-139-35-43-79-66-126-68-21-1-41 4-59 15Z" fill="url(#sil)"/>
+
+    <!-- shirt highlight -->
+    <path d="M125 184c25-16 61-23 91-13 39 13 69 42 86 78 22 47 18 99-7 136-21 30-51 47-88 50-48 4-90-12-118-43-27-30-39-69-34-109 5-45 29-78 70-99Z" fill="#347CAF" opacity=".88"/>
+
+    <!-- arm reaching forward -->
+    <path d="M289 223c46 13 84 40 111 78" fill="none" stroke="url(#sil)" stroke-width="32" stroke-linecap="round"/>
+    <path d="M399 301c14 18 21 39 21 62" fill="none" stroke="url(#sil)" stroke-width="30" stroke-linecap="round"/>
+    <circle cx="421" cy="378" r="16" fill="#0A2E5B"/>
+
+    <!-- other arm -->
+    <path d="M129 219c-36 30-57 65-60 105" fill="none" stroke="url(#sil)" stroke-width="30" stroke-linecap="round"/>
+    <path d="M69 324c-1 35 11 65 36 90" fill="none" stroke="url(#sil)" stroke-width="28" stroke-linecap="round"/>
+    <circle cx="109" cy="419" r="15" fill="#0A2E5B"/>
+
+    <!-- legs / squat stance -->
+    <path d="M183 432c-48 26-81 65-96 116" fill="none" stroke="url(#sil)" stroke-width="46" stroke-linecap="round"/>
+    <path d="M240 431c42 17 80 47 113 91" fill="none" stroke="url(#sil)" stroke-width="46" stroke-linecap="round"/>
+    <path d="M89 548c-8 13-18 24-30 32" fill="none" stroke="#1E6FB7" stroke-width="28" stroke-linecap="round"/>
+    <path d="M355 522c14 18 28 31 44 39" fill="none" stroke="#1E6FB7" stroke-width="28" stroke-linecap="round"/>
+
+    <!-- floor -->
+    <path d="M20 591h460" stroke="#A8BCCB" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+
+    <!-- dumbbells on floor -->
+    <g transform="translate(245 535)">
+      <rect x="34" y="24" width="92" height="20" rx="9" fill="#2E9E6B"/>
+      <rect x="14" y="8" width="28" height="52" rx="8" fill="#0A2E5B"/>
+      <rect x="0" y="14" width="18" height="40" rx="6" fill="#1E6FB7"/>
+      <rect x="119" y="8" width="28" height="52" rx="8" fill="#0A2E5B"/>
+      <rect x="143" y="14" width="18" height="40" rx="6" fill="#1E6FB7"/>
+    </g>
+    <g transform="translate(35 535) scale(.88)">
+      <rect x="34" y="24" width="92" height="20" rx="9" fill="#6FD1C6"/>
+      <rect x="14" y="8" width="28" height="52" rx="8" fill="#0A2E5B"/>
+      <rect x="0" y="14" width="18" height="40" rx="6" fill="#1E6FB7"/>
+      <rect x="119" y="8" width="28" height="52" rx="8" fill="#0A2E5B"/>
+      <rect x="143" y="14" width="18" height="40" rx="6" fill="#1E6FB7"/>
+    </g>
+  </g>
+
+  <path d="M94 527c128-85 273-92 431-44" fill="none" stroke="#D5E3EA" stroke-width="4" stroke-linecap="round"/>
+  <path d="M75 565c149-54 290-45 438 11" fill="none" stroke="#D9EBE5" stroke-width="4" stroke-linecap="round"/>
+</svg>
