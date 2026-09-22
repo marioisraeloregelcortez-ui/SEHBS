@@ -1,7 +1,31 @@
 (function(){
 const data=window.SEHBS_DATA||{};
 const hero=document.querySelector('[data-featured]');
-if(hero&&data.featured){hero.style.backgroundImage=`url('${data.featured.image}')`;hero.querySelector('[data-category]').textContent=data.featured.category;hero.querySelector('[data-title]').textContent=data.featured.title;hero.querySelector('[data-dek]').textContent=data.featured.dek;hero.querySelector('[data-source]').textContent=data.featured.source||'';hero.querySelector('[data-href]').href=data.featured.href}
+if(hero&&data.featured){
+  hero.style.backgroundImage=`url('${data.featured.image}')`;
+  hero.querySelector('[data-category]').textContent=data.featured.category;
+  hero.querySelector('[data-title]').textContent=data.featured.title;
+  hero.querySelector('[data-dek]').textContent=data.featured.dek;
+  hero.querySelector('[data-source]').textContent=data.featured.source||'';
+  hero.querySelector('[data-href]').href=data.featured.href;
+
+  // Load the 1600×900 WebP hero in five lightweight text chunks.
+  // The existing JPG remains as an immediate fallback while the HQ image loads.
+  Promise.all([0,1,2,3,4].map(i=>
+    fetch(`assets/hero-hq-${i}.b64?v=2`).then(r=>{
+      if(!r.ok) throw new Error('Hero HQ chunk '+i);
+      return r.text();
+    })
+  )).then(parts=>{
+    const base64=parts.join('').replace(/\s+/g,'');
+    const binary=atob(base64);
+    const bytes=new Uint8Array(binary.length);
+    for(let i=0;i<binary.length;i++) bytes[i]=binary.charCodeAt(i);
+    const blob=new Blob([bytes],{type:'image/webp'});
+    const hqUrl=URL.createObjectURL(blob);
+    hero.style.backgroundImage=`url("${hqUrl}")`;
+  }).catch(()=>{/* keep the fallback hero */});
+}
 const weekly=document.querySelector('[data-weekly]');
 if(weekly&&data.weekly){weekly.querySelector('img').src=data.weekly.image;weekly.querySelector('[data-category]').textContent=data.weekly.category;weekly.querySelector('[data-title]').textContent=data.weekly.title;weekly.querySelector('[data-dek]').textContent=data.weekly.dek;weekly.querySelector('[data-href]').href=data.weekly.href}
 const grid=document.querySelector('[data-news-grid]');
