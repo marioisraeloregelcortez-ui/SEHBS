@@ -16,3 +16,102 @@
 .toast{position:fixed;right:20px;bottom:20px;background:var(--navy);color:white;padding:12px 16px;border-radius:8px;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);pointer-events:none;transition:.25s;z-index:50}.toast.show{opacity:1;transform:none}
 @media(max-width:900px){.brandbar{padding:14px 0}.brandbar .container{grid-template-columns:1fr;min-height:110px}.brandbar .motto{display:none}.brandbar a{max-width:680px}.logo{width:100%;max-width:680px}.hero-grid{grid-template-columns:1fr}.category-grid,.news-grid{grid-template-columns:repeat(2,1fr)}.local{grid-template-columns:1fr}.local img{max-height:300px}.footer-grid{grid-template-columns:1fr 1fr}.search{display:none}.newsletter .container{flex-direction:column;align-items:stretch}.newsletter form{min-width:0}}
 @media(max-width:680px){.topline{display:none}.nav .container{display:block}.menu-btn{display:block;margin-left:auto}.navlinks{display:none;flex-direction:column}.navlinks.open{display:flex}.nav a{width:100%}.hero{min-height:500px}.hero-content{padding:30px 24px;max-width:100%}.hero h1{font-size:2.45rem}.category-grid,.news-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.footer-grid,.contact-grid{grid-template-columns:1fr}.copyright{flex-direction:column}.local .copy{padding:26px}}
+
+/* SEHBS original brand mark + typographic lockup */
+.brand-lockup{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  width:100%;
+  max-width:760px;
+  justify-self:center;
+  text-decoration:none;
+}
+.logo-mark{
+  width:118px;
+  height:110px;
+  object-fit:contain;
+  flex:0 0 auto;
+}
+.brand-copy{
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+.brand-main-row{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+.brand-acronym{
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:4.25rem;
+  line-height:.88;
+  font-weight:700;
+  color:var(--navy);
+  white-space:nowrap;
+}
+.brand-divider{
+  width:1px;
+  height:58px;
+  background:#9babb9;
+  flex:0 0 auto;
+}
+.brand-name{
+  font-family:Montserrat,Arial,sans-serif;
+  font-size:1.08rem;
+  line-height:1.35;
+  color:#17314c;
+  font-weight:500;
+  white-space:nowrap;
+}
+.brand-subtitle{
+  margin-top:10px;
+  font-family:Montserrat,Arial,sans-serif;
+  font-size:.82rem;
+  line-height:1;
+  letter-spacing:.24em;
+  color:var(--blue);
+  font-weight:600;
+  white-space:nowrap;
+}
+.footer-brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.footer .footer-mark{
+  width:78px;
+  height:78px;
+  object-fit:contain;
+  filter:none;
+  opacity:1;
+}
+.footer-brand strong{
+  display:block;
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:2rem;
+  letter-spacing:.02em;
+}
+.footer-brand p{
+  margin:.35rem 0 0;
+}
+
+@media(max-width:900px){
+  .brand-lockup{max-width:680px;gap:12px}
+  .logo-mark{width:96px;height:90px}
+  .brand-acronym{font-size:3.45rem}
+  .brand-divider{height:48px}
+  .brand-name{font-size:.96rem}
+  .brand-subtitle{font-size:.72rem;letter-spacing:.18em}
+}
+@media(max-width:680px){
+  .brand-lockup{gap:10px}
+  .logo-mark{width:78px;height:74px}
+  .brand-main-row{gap:10px}
+  .brand-acronym{font-size:2.65rem}
+  .brand-divider{height:38px}
+  .brand-name{font-size:.74rem;line-height:1.25}
+  .brand-subtitle{font-size:.58rem;letter-spacing:.12em;margin-top:8px}
+}
