@@ -1,0 +1,8 @@
+window.SEHBS_DATA={
+featured:{category:"Rendimiento deportivo",title:"Series cluster vs. ondulantes en peso muerto: dos formas de gestionar la fatiga",dek:"Una lectura divulgativa sobre cómo la organización de las series puede modificar la pérdida de velocidad, la potencia y la respuesta de lactato.",image:"assets/img-cycling.svg",href:"article.html?slug=cluster-vs-undulating",source:"Sport Sciences for Health · 2026"},
+weekly:{category:"Salud",title:"La actividad física y el cerebro: una relación que sigue generando nuevas preguntas",dek:"Una nota editorial para seguir la evidencia emergente sobre ejercicio, cognición y envejecimiento saludable.",image:"assets/img-brain.svg",href:"article.html?slug=actividad-fisica-cerebro"},
+latest:[
+{category:"Rendimiento deportivo",title:"Series cluster y ondulantes: qué cambia cuando reorganizamos el descanso",date:"Edición de demostración",image:"assets/img-cycling.svg",href:"article.html?slug=cluster-vs-undulating"},
+{category:"Ejercicio y salud",title:"Programas multicomponente y envejecimiento activo: cómo leer la evidencia",date:"Edición de demostración",image:"assets/img-older-adults.svg",href:"article.html?slug=multicomponente-adultos-mayores"},
+{category:"Ciencias biomédicas",title:"Vesículas extracelulares: por qué están ganando protagonismo en medicina del ejercicio",date:"Edición de demostración",image:"assets/img-lab.svg",href:"article.html?slug=vesiculas-extracelulares"},
+{category:"Revisión de literatura",title:"Cómo distinguir una revisión narrativa de una revisión sistemática",date:"Edición de demostración",image:"assets/img-literature.svg",href:"article.html?slug=revisiones-cientificas"}]};
