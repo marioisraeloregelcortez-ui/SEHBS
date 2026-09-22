@@ -1,7 +1,7 @@
 window.SEHBS_DATA={
 featured: {
   category: "Ejercicio y salud",
-  title: "12 semanas de entrenamiento multicomponente mejoran la composición corporal, la salud metabólica y el rendimiento físico en mujeres de mediana y mayor edad",
+  title: "Effects of 12-Week Multicomponent Training Program on Body Composition, Metabolic Health, and Physical Performance in Middle-Aged and OlderWomen: Exploratory Role of Baseline Adiposity",
   dek: "Artículo recientemente publicado en Sports (MDPI), la investigación reporta mejoras en VO₂max, masa muscular, perfil metabólico y desempeño funcional, con un posible papel modulador de la adiposidad basal.",
   image: "assets/hero-women-exercise-science-hq.webp?v=1",
   href: "https://doi.org/10.3390/sports14050204",
