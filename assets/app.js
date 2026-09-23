@@ -82,10 +82,63 @@ const menu=document.querySelector('.menu-btn'),navlinks=document.querySelector('
 if(menu&&navlinks)menu.addEventListener('click',()=>navlinks.classList.toggle('open'));
 
 const search=document.querySelector('[data-search]');
-if(search)search.addEventListener('input',e=>{
-  const q=e.target.value.trim().toLowerCase();
-  document.querySelectorAll('[data-searchable]').forEach(el=>el.style.display=!q||el.dataset.searchable.includes(q)?'':'none');
-});
+const searchQuery=params.get("q")||"";
+
+function filterSearchResults(value){
+  const q=normalize(value);
+  document.querySelectorAll('[data-searchable]').forEach(el=>{
+    const haystack=normalize(el.dataset.searchable);
+    el.style.display=!q||haystack.includes(q)?'':'none';
+  });
+
+  const empty=document.querySelector('[data-empty-state]');
+  if(empty){
+    const visible=[...document.querySelectorAll('[data-searchable]')].some(el=>el.style.display!=='none');
+    empty.hidden=visible;
+  }
+}
+
+if(search){
+  if(searchQuery) search.value=searchQuery;
+
+  search.addEventListener('input',e=>filterSearchResults(e.target.value));
+
+  search.addEventListener('keydown',e=>{
+    if(e.key!=="Enter") return;
+    e.preventDefault();
+    const q=e.target.value.trim();
+    if(!q) return;
+
+    const onNewsPage=window.location.pathname.endsWith('/noticias.html')||window.location.pathname.endsWith('noticias.html');
+    if(onNewsPage){
+      const url=new URL(window.location.href);
+      url.searchParams.delete("category");
+      url.searchParams.set("q",q);
+      window.history.replaceState({},"",url);
+      filterSearchResults(q);
+
+      const title=document.querySelector('[data-category-title]');
+      const intro=document.querySelector('[data-category-intro]');
+      const reset=document.querySelector('[data-category-reset]');
+      if(title) title.textContent=`Resultados de búsqueda: “${q}”`;
+      if(intro) intro.textContent="Resultados encontrados dentro de las noticias publicadas en SEHBS.";
+      if(reset) reset.hidden=false;
+    }else{
+      window.location.href=`noticias.html?q=${encodeURIComponent(q)}`;
+    }
+  });
+}
+
+if(searchQuery){
+  filterSearchResults(searchQuery);
+
+  const title=document.querySelector('[data-category-title]');
+  const intro=document.querySelector('[data-category-intro]');
+  const reset=document.querySelector('[data-category-reset]');
+  if(title) title.textContent=`Resultados de búsqueda: “${searchQuery}”`;
+  if(intro) intro.textContent="Resultados encontrados dentro de las noticias publicadas en SEHBS.";
+  if(reset) reset.hidden=false;
+}
 
 function toast(msg){
   const t=document.querySelector('.toast');
