@@ -148,9 +148,4 @@ function toast(msg){
   setTimeout(()=>t.classList.remove('show'),2600);
 }
 
-document.querySelectorAll('[data-demo-form]').forEach(form=>form.addEventListener('submit',e=>{
-  e.preventDefault();
-  toast('Formulario de demostración: falta conectar un servicio de envío.');
-  form.reset();
-}));
 })();
