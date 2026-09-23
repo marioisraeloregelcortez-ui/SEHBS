@@ -12,7 +12,7 @@ weekly:{
   title:"Creatina, plaquetas y metástasis: un nuevo mecanismo descrito en Nature Communications",
   dek:"El estudio reporta que la suplementación con creatina aumentó la hiperactividad plaquetaria y favoreció la metástasis en distintos modelos murinos. En un estudio piloto con 11 adultos jóvenes sanos, 20 g/día durante 14 días también incrementaron la actividad plaquetaria.",
   image:"assets/biomedical-platelets-metastasis-weekly.png?v=2",
-  href:"https://doi.org/10.1038/s41467-026-74639-z"}
+  href:"https://doi.org/10.1038/s41467-026-74639-z"
 },
 latest:[
 {category: "Excercise and health", title: "Entrenamiento multicomponente y envejecimiento saludable en mujeres: hallazgos recientes desde Sports (MDPI)", date: "May 2026", image: "assets/mujeres_mayores_entrenando_en_estudio_luminoso.png?v=1", href: "https://doi.org/10.3390/sports14050204"},
