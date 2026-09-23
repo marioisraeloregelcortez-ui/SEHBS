@@ -380,3 +380,44 @@
   line-height:1.4!important;
   vertical-align:middle!important;
 }
+
+
+/* Newsletter final alignment: email/button and native consent checkbox */
+.newsletter .sehbs-email-block .form__entry,
+.newsletter .sehbs-email-block .form__label-row,
+.newsletter .sehbs-email-block .entry__field,
+.newsletter .sehbs-submit-block{
+  margin:0!important;
+  padding:0!important;
+}
+.newsletter .sehbs-email-block input,
+.newsletter .sehbs-submit-block button{
+  height:48px!important;
+  min-height:48px!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+}
+.newsletter .sehbs-email-block input{
+  border-radius:6px 0 0 6px!important;
+}
+.newsletter .sehbs-submit-block button{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-radius:0 6px 6px 0!important;
+  line-height:1!important;
+}
+.newsletter .entry__choice .input_replaced{
+  width:15px!important;
+  height:15px!important;
+  min-width:15px!important;
+  min-height:15px!important;
+  margin:0!important;
+  border:0!important;
+  outline:none!important;
+  box-shadow:none!important;
+  accent-color:var(--green);
+}
+.newsletter .entry__choice label{
+  gap:7px!important;
+}
