@@ -513,3 +513,31 @@
   line-height:1.4!important;
   vertical-align:middle!important;
 }
+
+
+/* Newsletter consent final spacing: lock checkbox and text into separate grid columns */
+.newsletter .entry__choice label{
+  display:grid!important;
+  grid-template-columns:18px minmax(0,1fr)!important;
+  column-gap:10px!important;
+  align-items:center!important;
+  padding:0!important;
+  margin:0!important;
+}
+.newsletter .sehbs-consent-box{
+  grid-column:1!important;
+  justify-self:start!important;
+  align-self:center!important;
+  width:16px!important;
+  height:16px!important;
+  min-width:16px!important;
+  min-height:16px!important;
+  margin:0!important;
+}
+.newsletter .sehbs-consent-copy{
+  grid-column:2!important;
+  margin:0!important;
+  padding:0!important;
+  line-height:1.4!important;
+  white-space:normal!important;
+}
