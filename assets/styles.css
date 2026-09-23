@@ -278,3 +278,18 @@
     padding: 10px;
   }
 }
+
+/* Category icon alignment */
+.category{
+  justify-content:flex-start;
+}
+.category .icon{
+  flex:0 0 138px;
+  align-self:flex-start;
+}
+@media(max-width:900px){
+  .category .icon{flex-basis:118px}
+}
+@media(max-width:680px){
+  .category .icon{flex-basis:102px}
+}
