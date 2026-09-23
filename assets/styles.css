@@ -231,23 +231,27 @@
 
 /* Visual category icons */
 .category .icon{
-  width:112px;
-  height:112px;
+  width:128px;
+  height:128px;
   margin:0 0 18px;
   display:flex;
   align-items:center;
   justify-content:center;
+  color:#ffffff;
 }
-.category .icon img{
+.category .category-icon-svg{
   width:100%;
   height:100%;
-  object-fit:contain;
   display:block;
-  filter:drop-shadow(0 8px 18px rgba(0,0,0,.14));
+  overflow:visible;
+  filter:drop-shadow(0 8px 18px rgba(0,0,0,.16));
+}
+.category .category-icon-svg .accent{
+  color:#72e0d2;
 }
 @media(max-width:900px){
-  .category .icon{width:96px;height:96px;margin-bottom:15px}
+  .category .icon{width:108px;height:108px;margin-bottom:15px}
 }
 @media(max-width:680px){
-  .category .icon{width:88px;height:88px;margin-bottom:14px}
+  .category .icon{width:96px;height:96px;margin-bottom:14px}
 }
