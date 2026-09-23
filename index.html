@@ -25,6 +25,7 @@ window.AUTOHIDE=false;
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
 <script defer src="assets/app.js?v=20260923-34"></script>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 </head>
 <body>
 <div class="topline"><div class="container"><span>Science for a Healthier and Stronger Tomorrow</span><span>Sport · Exercise · Health · Biomedical Sciences</span></div></div>
@@ -60,33 +61,62 @@ window.AUTOHIDE=false;
 <article class="card" data-searchable="ejercicio y síndrome metabólico en niños y adolescentes hallazgos recientes desde retos literature review"><img src="assets/literature-review-cover.png" alt="Imagen editorial de Literature review" loading="lazy"><div class="card-body"><span class="tag">Literature review</span><h3><a href="https://doi.org/10.47197/retos.v62.108003">Ejercicio y síndrome metabólico en niños y adolescentes: hallazgos recientes desde Retos</a></h3><div class="date">January 2025</div></div></article>
 </div></div></section>
 <section class="section soft"><div class="container"><div class="local"><img src="assets/img-uabc.svg" alt="Investigación local"><div class="copy"><div class="eyebrow">Investigación local</div><h2>Ciencia hecha en nuestra región</h2><p>Un espacio para difundir investigaciones, proyectos y logros académicos de nuestra comunidad, con énfasis en actividad física, salud y ciencias biomédicas.</p><p class="meta">Esta sección puede crecer con producción UABC y colaboraciones regionales.</p><a class="btn green" href="investigacion-local.html">Ver más →</a></div></div></div></section>
-<section class="newsletter"><div class="container"><div><h3>Recibe las últimas noticias en tu correo</h3><div class="meta">Resumen semanal de investigaciones y avances seleccionados.</div></div><div class="newsletter-brevo">
-  <div id="error-message" class="sib-form-message-panel sehbs-newsletter-message sehbs-newsletter-error">
-    No hemos podido procesar tu suscripción. Inténtalo de nuevo en unos momentos.
-  </div>
-  <div id="success-message" class="sib-form-message-panel sehbs-newsletter-message sehbs-newsletter-success">
-    Revisa tu correo electrónico para confirmar tu suscripción a SEHBS.
-  </div>
-  <form id="sib-form" class="sehbs-newsletter-form" method="POST" action="https://8cced5cb.sibforms.com/serve/MUIFAIIXj0HPMNKH9PelJ2idsZJ4SH9CWHDpOuEsw4_R1FeoWbDxh0UsjehlIQALgFsxcWerivxYTQK2jAAfT1EwFQgFkSUUqUtu-xnG3qbJlCBLfM4iNRRfwDCmRHgXz7j0Ng2A5_nwV6ZcLu-25PGWRoQZ6eKzaLOkepZMBseK7q516eEMSZDHPvNfr-TAYh_TU2AeGxF66wiJsg==" data-type="subscription">
-    <div class="newsletter-fields">
-      <div class="newsletter-email-wrap">
-        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" placeholder="Tu correo electrónico…" data-required="true" required aria-label="Correo electrónico">
-        <label class="entry__error entry__error--primary" aria-live="polite"></label>
-      </div>
-      <button class="sib-form-block__button sib-form-block__button-with-loader" type="submit">Suscribirme</button>
+<section class="newsletter"><div class="container"><div><h3>Recibe las últimas noticias en tu correo</h3><div class="meta">Resumen semanal de investigaciones y avances seleccionados.</div></div>
+<div class="newsletter-brevo sib-form">
+  <div id="sib-form-container" class="sib-form-container">
+    <div id="error-message" class="sib-form-message-panel sehbs-newsletter-message sehbs-newsletter-error">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center"><span class="sib-form-message-panel__inner-text">No hemos podido procesar tu suscripción. Inténtalo de nuevo en unos momentos.</span></div>
     </div>
-    <label class="newsletter-consent">
-      <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required>
-      <span>Confirmo mi consentimiento para recibir noticias y actualizaciones de SEHBS. Puedo darme de baja en cualquier momento.</span>
-    </label>
-    <label class="entry__error entry__error--primary" aria-live="polite"></label>
-    <div class="newsletter-captcha">
-      <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6LepXcstAAAAAGdAM6iqXTjy-4vC3OSC1Q47KCdM" data-callback="handleCaptchaResponse"></div>
-      <label class="entry__error entry__error--primary" aria-live="polite"></label>
+    <div></div>
+    <div id="success-message" class="sib-form-message-panel sehbs-newsletter-message sehbs-newsletter-success">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center"><span class="sib-form-message-panel__inner-text">Revisa tu correo electrónico para confirmar tu suscripción a SEHBS.</span></div>
     </div>
-    <input type="text" name="email_address_check" value="" class="input--hidden" tabindex="-1" autocomplete="off">
-    <input type="hidden" name="locale" value="es">
-  </form>
+    <div></div>
+    <div id="sib-container" class="sib-container--large sib-container--vertical sehbs-sib-container">
+      <form id="sib-form" method="POST" action="https://8cced5cb.sibforms.com/serve/MUIFAIIXj0HPMNKH9PelJ2idsZJ4SH9CWHDpOuEsw4_R1FeoWbDxh0UsjehlIQALgFsxcWerivxYTQK2jAAfT1EwFQgFkSUUqUtu-xnG3qbJlCBLfM4iNRRfwDCmRHgXz7j0Ng2A5_nwV6ZcLu-25PGWRoQZ6eKzaLOkepZMBseK7q516eEMSZDHPvNfr-TAYh_TU2AeGxF66wiJsg==" data-type="subscription">
+        <div class="sib-input sib-form-block sehbs-email-block">
+          <div class="form__entry entry_block">
+            <div class="form__label-row">
+              <div class="entry__field">
+                <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="email" value="" placeholder="Tu correo electrónico…" data-required="true" required>
+              </div>
+            </div>
+            <label class="entry__error entry__error--primary"></label>
+          </div>
+        </div>
+        <div class="sib-optin sib-form-block sehbs-optin-block" data-required="true">
+          <div class="form__entry entry_mcq">
+            <div class="form__label-row">
+              <label class="entry__label" for="OPT_IN" data-required="*">Acepto recibir por correo electrónico noticias y actualizaciones de SEHBS. Puedo darme de baja en cualquier momento.</label>
+              <div class="entry__choice">
+                <label>
+                  <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required>
+                  <span class="checkbox checkbox_tick_positive"></span><span class="sehbs-consent-copy">Confirmo mi consentimiento</span>
+                </label>
+              </div>
+            </div>
+            <label class="entry__error entry__error--primary"></label>
+          </div>
+        </div>
+        <div class="sib-captcha sib-form-block sehbs-captcha-block">
+          <div class="form__entry entry_block">
+            <div class="form__label-row">
+              <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6LepXcstAAAAAGdAM6iqXTjy-4vC3OSC1Q47KCdM" data-callback="handleCaptchaResponse" style="direction:ltr"></div>
+            </div>
+            <label class="entry__error entry__error--primary"></label>
+          </div>
+        </div>
+        <div class="sib-form-block sehbs-submit-block">
+          <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+            <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"></path></svg>
+            Suscribirme
+          </button>
+        </div>
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="es">
+      </form>
+    </div>
+  </div>
 </div></div></section>
 </main>
 <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><img class="footer-mark" src="assets/logo-mark.png?v=2" alt="Símbolo SEHBS"><div><strong>SEHBS</strong><p>Weekly Research &amp; Science News</p></div></div><div><h4>Enlaces</h4><a href="noticias.html">Noticias</a><a href="categorias.html">Categorías</a><a href="investigacion-local.html">Investigación local</a></div><div><h4>SEHBS</h4><a href="sobre.html">Sobre SEHBS</a><a href="contacto.html">Contacto</a></div></div><div class="copyright"><span>© 2026 SEHBS. Versión inicial del sitio.</span><span><em>Evidence today. A healthier tomorrow.</em></span></div></div></footer>
