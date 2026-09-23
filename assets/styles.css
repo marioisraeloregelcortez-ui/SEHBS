@@ -229,25 +229,52 @@
   object-position:center top;
 }
 
-/* Visual category icons — original SEHBS generated set */
+/* Visual category icons */
 .category .icon{
-  width:132px;
-  height:132px;
-  margin:0 0 18px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  width: 138px;
+  height: 138px;
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Fondo sutil para separar el icono del gradiente */
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 20px;
+  padding: 14px;
+  box-sizing: border-box;
 }
+
 .category .icon img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  display:block;
-  filter:drop-shadow(0 8px 16px rgba(0,0,0,.10));
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+
+  /* Delineado/blanco visual */
+  filter:
+    drop-shadow(0 0 1px #ffffff)
+    drop-shadow(0 0 2px #ffffff)
+    drop-shadow(1px 0 0 #ffffff)
+    drop-shadow(-1px 0 0 #ffffff)
+    drop-shadow(0 1px 0 #ffffff)
+    drop-shadow(0 -1px 0 #ffffff)
+    drop-shadow(0 8px 18px rgba(0,0,0,0.18));
 }
-@media(max-width:900px){
-  .category .icon{width:112px;height:112px;margin-bottom:15px}
+
+@media (max-width: 900px){
+  .category .icon{
+    width: 118px;
+    height: 118px;
+    padding: 12px;
+  }
 }
-@media(max-width:680px){
-  .category .icon{width:98px;height:98px;margin-bottom:14px}
+
+@media (max-width: 680px){
+  .category .icon{
+    width: 102px;
+    height: 102px;
+    padding: 10px;
+  }
 }
