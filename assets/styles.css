@@ -349,3 +349,34 @@
   display:flex!important;
   justify-content:flex-start!important;
 }
+
+
+/* Newsletter consent checkbox: use native control for stable Brevo alignment */
+.newsletter .entry__choice label{
+  display:flex!important;
+  align-items:center!important;
+  gap:8px!important;
+  min-height:20px!important;
+  padding:0!important;
+  margin:0!important;
+  line-height:1.4!important;
+}
+.newsletter .entry__choice .input_replaced{
+  position:static!important;
+  opacity:1!important;
+  width:16px!important;
+  height:16px!important;
+  margin:0!important;
+  pointer-events:auto!important;
+  appearance:auto!important;
+  -webkit-appearance:checkbox!important;
+  flex:0 0 auto!important;
+}
+.newsletter .entry__choice .checkbox{
+  display:none!important;
+}
+.newsletter .sehbs-consent-copy{
+  display:inline!important;
+  line-height:1.4!important;
+  vertical-align:middle!important;
+}
