@@ -298,3 +298,54 @@
 @media(max-width:680px){.newsletter .container{align-items:stretch}.newsletter-brevo{min-width:0;width:100%}.newsletter-fields{display:flex}.newsletter-captcha{transform:scale(.88);margin-bottom:-8px}}
 
 @media(max-width:680px){.newsletter .container{align-items:stretch}.newsletter-brevo{min-width:0;width:100%}.newsletter #sib-form{grid-template-columns:minmax(0,1fr) auto}.newsletter .sehbs-captcha-block{transform:scale(.88);transform-origin:left top;margin-bottom:-8px}}
+
+
+/* Newsletter alignment refinement: Brevo checkbox + spacing */
+.newsletter #sib-form{
+  row-gap:12px;
+}
+.newsletter .sehbs-optin-block{
+  margin-top:4px;
+}
+.newsletter .sehbs-optin-block .entry__label{
+  margin:0 0 8px!important;
+}
+.newsletter .entry__choice{
+  margin:0!important;
+  padding:0!important;
+}
+.newsletter .entry__choice label{
+  position:relative!important;
+  display:block!important;
+  min-height:20px!important;
+  padding:1px 0 0 26px!important;
+  margin:0!important;
+  line-height:1.45!important;
+}
+.newsletter .entry__choice .input_replaced{
+  position:absolute!important;
+  opacity:0!important;
+  width:1px!important;
+  height:1px!important;
+  pointer-events:none!important;
+}
+.newsletter .entry__choice .checkbox{
+  position:absolute!important;
+  left:0!important;
+  top:1px!important;
+  width:16px!important;
+  height:16px!important;
+  margin:0!important;
+}
+.newsletter .sehbs-consent-copy{
+  display:inline-block!important;
+  line-height:1.45!important;
+  vertical-align:top!important;
+}
+.newsletter .sehbs-captcha-block{
+  margin-top:0!important;
+}
+.newsletter .sehbs-captcha-block .form__label-row{
+  display:flex!important;
+  justify-content:flex-start!important;
+}
