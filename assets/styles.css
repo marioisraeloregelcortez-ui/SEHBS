@@ -421,3 +421,36 @@
 .newsletter .entry__choice label{
   gap:7px!important;
 }
+
+
+/* Newsletter consent: native checkbox, no Brevo replacement overlay */
+.newsletter .entry__choice label{
+  display:flex!important;
+  align-items:center!important;
+  gap:8px!important;
+  padding:0!important;
+  margin:0!important;
+}
+.newsletter .sehbs-native-consent{
+  position:static!important;
+  appearance:checkbox!important;
+  -webkit-appearance:checkbox!important;
+  width:16px!important;
+  height:16px!important;
+  min-width:16px!important;
+  min-height:16px!important;
+  margin:0!important;
+  padding:0!important;
+  opacity:1!important;
+  transform:none!important;
+  box-shadow:none!important;
+  border:0!important;
+  flex:0 0 auto!important;
+  accent-color:var(--green);
+}
+.newsletter .sehbs-consent-copy{
+  display:inline-block!important;
+  margin:0!important;
+  padding:0!important;
+  line-height:1.4!important;
+}
