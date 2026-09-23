@@ -7,7 +7,13 @@ featured: {
   href: "https://doi.org/10.3390/sports14050204",
   source: "Sports (MDPI) · May 2026 · Corresponding author: Dr. Mario Israel Oregel-Cortez"
 },
-weekly:{category:"Salud",title:"La actividad física y el cerebro: una relación que sigue generando nuevas preguntas",dek:"Una nota editorial para seguir la evidencia emergente sobre ejercicio, cognición y envejecimiento saludable.",image:"assets/img-brain.svg",href:"article.html?slug=actividad-fisica-cerebro"},
+weekly:{
+  category:"Biomedical sciences",
+  title:"Creatina, plaquetas y metástasis: un nuevo mecanismo descrito en Nature Communications",
+  dek:"El estudio reporta que la suplementación con creatina aumentó la hiperactividad plaquetaria y favoreció la metástasis en distintos modelos murinos. En un estudio piloto con 11 adultos jóvenes sanos, 20 g/día durante 14 días también incrementaron la actividad plaquetaria; el efecto prometastásico de esas plaquetas humanas se evaluó posteriormente mediante transferencia a ratones inmunodeficientes.",
+  image:"assets/img-lab.svg",
+  href:"https://doi.org/10.1038/s41467-026-74639-z"
+},
 latest:[
 {category: "Excercise and health", title: "Entrenamiento multicomponente y envejecimiento saludable en mujeres: hallazgos recientes desde Sports (MDPI)", date: "May 2026", image: "assets/mujeres_mayores_entrenando_en_estudio_luminoso.png?v=1", href: "https://doi.org/10.3390/sports14050204"},
 {category: "Athletic performance", title: "Series cluster y ondulantes en peso muerto: hallazgos recientes desde Sport Sciences for Health (Springer)",date: "May 2026", image: "assets/cluster-deadlift-cover.png?v=1", href: "https://doi.org/10.1007/s11332-026-01766-x"},
