@@ -229,29 +229,25 @@
   object-position:center top;
 }
 
-/* Visual category icons */
+/* Visual category icons — original SEHBS generated set */
 .category .icon{
-  width:128px;
-  height:128px;
+  width:132px;
+  height:132px;
   margin:0 0 18px;
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#ffffff;
 }
-.category .category-icon-svg{
+.category .icon img{
   width:100%;
   height:100%;
+  object-fit:contain;
   display:block;
-  overflow:visible;
-  filter:drop-shadow(0 8px 18px rgba(0,0,0,.16));
-}
-.category .category-icon-svg .accent{
-  color:#72e0d2;
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,.10));
 }
 @media(max-width:900px){
-  .category .icon{width:108px;height:108px;margin-bottom:15px}
+  .category .icon{width:112px;height:112px;margin-bottom:15px}
 }
 @media(max-width:680px){
-  .category .icon{width:96px;height:96px;margin-bottom:14px}
+  .category .icon{width:98px;height:98px;margin-bottom:14px}
 }
