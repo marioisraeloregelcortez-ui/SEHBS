@@ -727,7 +727,7 @@
   flex:0 0 52px;
   border:2px solid #e4edf3;
   background:#fff;
-  box-shadow:0 4px 12px rgba(10,46,91,.12);
+  box-shadow:0 5px 14px rgba(10,46,91,.24);
 }
 .evaluator-photo img{
   width:100%;
@@ -738,7 +738,6 @@
 }
 .evaluator-photo--cutout{
   background:linear-gradient(145deg,#f9fbfd,#e7eef4);
-  box-shadow:0 5px 14px rgba(10,46,91,.24);
 }
 .evaluator-photo--cutout img{
   filter:drop-shadow(0 2px 2px rgba(10,46,91,.28));
