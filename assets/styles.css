@@ -746,4 +746,4 @@
 /* Editorial label on the postural stability article cover */
 .card-media{position:relative}
 .card-media img{width:100%;aspect-ratio:16/9;object-fit:cover}
-.card-image-label{position:absolute;top:12px;left:12px;z-index:1;padding:7px 10px;border-radius:5px;background:rgba(10,46,91,.9);box-shadow:0 2px 8px rgba(10,46,91,.2);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.02em;line-height:1.2}
+.card-image-label{position:absolute;top:9px;left:10px;z-index:1;color:#fff;font-size:.54rem;font-weight:600;letter-spacing:.24em;line-height:1.2;text-transform:uppercase;text-shadow:0 1px 3px rgba(4,22,38,.85),0 0 5px rgba(4,22,38,.65)}
