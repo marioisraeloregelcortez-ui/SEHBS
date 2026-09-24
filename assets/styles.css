@@ -699,3 +699,20 @@
 .local-feature-actions{margin:20px 0 6px}
 @media(max-width:980px){.local-feature{grid-template-columns:1fr}.local-feature-visual{min-height:340px}.local-visual-nrf{top:145px}.local-visual-lines{top:245px}.local-keypoints{grid-template-columns:1fr}}
 @media(max-width:680px){.local-feature-copy{padding:25px 22px}.local-feature-copy h2{font-size:1.8rem}.local-feature-visual{padding:28px;min-height:300px}.local-visual-kicker{left:28px;top:26px}.local-visual-nrf{left:28px;top:125px;font-size:4.4rem}.local-visual-lines{left:28px;right:28px;top:215px}}
+
+
+/* Latest news cards: concise editorial synopsis + journal footer */
+.card .card-summary{
+  margin:10px 0 0;
+  color:#5f6f82;
+  font-size:.82rem;
+  line-height:1.52;
+}
+.card .card-journal{
+  margin-top:auto;
+  padding-top:14px;
+  font-size:.73rem;
+  font-weight:700;
+  color:var(--blue);
+  letter-spacing:.01em;
+}
