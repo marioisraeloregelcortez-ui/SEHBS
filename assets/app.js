@@ -60,7 +60,7 @@ if(grid&&data.latest){
     items=items.filter(item=>accepted.includes(normalize(item.category)));
   }
 
-  grid.innerHTML=items.map(item=>`<article class="card" data-searchable="${[item.title,item.summary,item.journal,item.category].filter(Boolean).join(' ').toLowerCase()}"><img src="${item.image}" alt="Imagen editorial de ${item.category}" loading="lazy"><div class="card-body"><span class="tag">${item.category}</span><h3><a href="${item.href}">${item.title}</a></h3><p class="card-summary">${item.summary||''}</p><div class="card-journal">${item.journal||''}</div></div></article>`).join('');
+  grid.innerHTML=items.map(item=>`<article class="card" data-searchable="${[item.title,item.summary,item.journal,item.category].filter(Boolean).join(' ').toLowerCase()}"><div class="card-media"><img src="${item.image}" alt="Imagen editorial de ${item.category}" loading="lazy">${item.imageLabel?`<span class="card-image-label">${item.imageLabel}</span>`:""}</div><div class="card-body"><span class="tag">${item.category}</span><h3><a href="${item.href}">${item.title}</a></h3><p class="card-summary">${item.summary||''}</p><div class="card-journal">${item.journal||''}</div></div></article>`).join('');
 
   const categoryTitle=document.querySelector('[data-category-title]');
   const categoryIntro=document.querySelector('[data-category-intro]');
