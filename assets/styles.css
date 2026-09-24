@@ -541,3 +541,66 @@
   line-height:1.4!important;
   white-space:normal!important;
 }
+
+
+/* Newsletter consent v42: remove Brevo entry__choice styling from the control */
+.newsletter .sehbs-consent-row{
+  margin:0!important;
+  padding:0!important;
+}
+.newsletter .sehbs-consent-input{
+  position:absolute!important;
+  opacity:0!important;
+  width:1px!important;
+  height:1px!important;
+  margin:0!important;
+  pointer-events:none!important;
+}
+.newsletter .sehbs-consent-label{
+  display:flex!important;
+  align-items:center!important;
+  gap:12px!important;
+  margin:0!important;
+  padding:0!important;
+  min-height:20px!important;
+  cursor:pointer!important;
+  color:var(--muted)!important;
+  font-size:.75rem!important;
+  line-height:1.4!important;
+}
+.newsletter .sehbs-consent-box{
+  display:block!important;
+  width:16px!important;
+  height:16px!important;
+  min-width:16px!important;
+  min-height:16px!important;
+  flex:0 0 16px!important;
+  margin:0!important;
+  padding:0!important;
+  border:1.5px solid #7d8a99!important;
+  border-radius:3px!important;
+  background:#fff!important;
+  box-sizing:border-box!important;
+  position:relative!important;
+}
+.newsletter .sehbs-consent-copy{
+  display:block!important;
+  margin:0!important;
+  padding:0!important;
+  line-height:1.4!important;
+}
+.newsletter .sehbs-consent-input:checked + .sehbs-consent-label .sehbs-consent-box{
+  background:var(--green)!important;
+  border-color:var(--green)!important;
+}
+.newsletter .sehbs-consent-input:checked + .sehbs-consent-label .sehbs-consent-box::after{
+  content:""!important;
+  position:absolute!important;
+  left:4px!important;
+  top:1px!important;
+  width:5px!important;
+  height:9px!important;
+  border:solid #fff!important;
+  border-width:0 2px 2px 0!important;
+  transform:rotate(45deg)!important;
+}
