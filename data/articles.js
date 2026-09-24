@@ -1,11 +1,11 @@
 window.SEHBS_DATA={
 featured: {
   category: "Excercise and health",
-  title: "Effects of 12-Week Multicomponent Training Program on Body Composition, Metabolic Health, and Physical Performance in Middle-Aged and OlderWomen: Exploratory Role of Baseline Adiposity",
-  dek: "Artículo recientemente publicado en Sports (MDPI), la investigación reporta mejoras en VO₂max, masa muscular, perfil metabólico y desempeño funcional, con un posible papel modulador de la adiposidad basal.",
+  title: "Entrenamiento multicomponente y envejecimiento saludable en mujeres",
+  dek: "Doce semanas de entrenamiento mejoraron indicadores físicos y metabólicos en mujeres de mediana y mayor edad.",
   image: "assets/hero-women-exercise-science-hq.webp?v=1",
   href: "https://doi.org/10.3390/sports14050204",
-  source: "Sports (MDPI) · May 2026 · Corresponding author: Dr. Mario Israel Oregel-Cortez"
+  source: "Sports"
 },
 weekly:{
   category:"Biomedical sciences",
