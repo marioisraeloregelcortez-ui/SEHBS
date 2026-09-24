@@ -604,3 +604,61 @@
   border-width:0 2px 2px 0!important;
   transform:rotate(45deg)!important;
 }
+
+
+/* Committee evaluator navigation */
+.nav-dropdown{position:relative;display:flex;align-items:stretch}
+.nav-dropdown summary{list-style:none;cursor:pointer;padding:16px 14px;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:#fff;white-space:nowrap;user-select:none}
+.nav-dropdown summary::-webkit-details-marker{display:none}
+.nav-dropdown summary::after{content:" ▾";font-size:.68rem;opacity:.8}
+.nav-dropdown summary:hover,.nav-dropdown summary.active{background:rgba(255,255,255,.08);box-shadow:inset 0 -3px var(--green)}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;min-width:230px;background:#fff;color:var(--ink);border:1px solid var(--line);border-top:0;box-shadow:0 14px 30px rgba(10,46,91,.16);z-index:40}
+.nav-dropdown[open] .nav-dropdown-menu{display:block}
+.nav-dropdown-menu a{display:block!important;width:100%;padding:12px 15px!important;color:var(--ink)!important;background:#fff!important;box-shadow:none!important;text-transform:none!important;letter-spacing:0!important;font-size:.78rem!important;border-bottom:1px solid #edf2f5}
+.nav-dropdown-menu a:last-child{border-bottom:0}
+.nav-dropdown-menu a:hover{background:var(--soft)!important;color:var(--blue)!important;box-shadow:none!important}
+@media(max-width:1120px) and (min-width:901px){.nav a,.nav-dropdown summary{padding-left:10px;padding-right:10px;font-size:.71rem}.search input{min-width:165px}}
+@media(max-width:900px){.nav-dropdown{display:block;width:100%}.nav-dropdown summary{width:100%;padding:14px 18px}.nav-dropdown-menu{position:static;min-width:0;border:0;box-shadow:none;background:rgba(255,255,255,.05)}.nav-dropdown-menu a{padding:11px 30px!important;background:rgba(255,255,255,.04)!important;color:#fff!important;border-color:rgba(255,255,255,.08)}.nav-dropdown-menu a:hover{background:rgba(255,255,255,.09)!important;color:#fff!important}}
+
+/* Committee evaluator page */
+.committee-hero{background:linear-gradient(135deg,#f3f8fb 0%,#eef8f4 100%)}
+.committee-hero p{max-width:850px}
+.committee-hero-stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.committee-hero-stats div{display:flex;align-items:center;gap:10px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.78)}
+.committee-hero-stats strong{font-family:'Playfair Display',Georgia,serif;font-size:1.65rem;color:var(--navy)}
+.committee-hero-stats span{font-size:.72rem;line-height:1.35;color:var(--muted);max-width:145px}
+.committee-content{scroll-margin-top:72px}
+.committee-section-head{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:end;margin-bottom:24px}
+.committee-section-head h2,.committee-title{font-size:2rem;margin:.45rem 0 0;color:var(--navy)}
+.committee-section-head>p{margin:0;color:var(--muted);line-height:1.7}
+.purpose-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.purpose-grid article{border:1px solid var(--line);border-radius:12px;padding:22px;background:#fff;box-shadow:0 8px 24px rgba(10,46,91,.06)}
+.purpose-grid article>span{font-size:.7rem;letter-spacing:.14em;color:var(--green);font-weight:700}
+.purpose-grid h3{font-size:1.28rem;margin:9px 0;color:var(--navy)}
+.purpose-grid p{font-size:.84rem;line-height:1.6;color:var(--muted);margin:0}
+.committee-note{margin-top:18px;padding:14px 16px;border-left:4px solid var(--green);background:#f2faf6;color:#415569;font-size:.84rem;line-height:1.6}
+#areas,#integrantes{scroll-margin-top:72px}
+.committee-area-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.committee-area-card{border:1px solid var(--line);border-radius:12px;padding:22px;background:#fff}
+.committee-area-card.pending{border-style:dashed;background:#fbfcfd}
+.committee-area-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.committee-area-number{display:flex;align-items:center;justify-content:center;width:42px;height:42px;flex:0 0 42px;border-radius:50%;background:var(--navy);color:#fff;font-family:'Playfair Display',Georgia,serif;font-size:1.2rem}
+.committee-area-card.pending .committee-area-number{background:#8090a1}
+.committee-area-card h3{margin:0;color:var(--navy);font-size:1.4rem}
+.committee-area-card>p{color:#526377;line-height:1.6;font-size:.88rem}
+.committee-area-members{padding-top:12px;border-top:1px solid var(--line);font-size:.76rem;line-height:1.6;color:var(--muted)}
+.committee-area-footnote{font-size:.76rem;color:var(--muted);margin:14px 0 0}
+.evaluator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.evaluator-card{border:1px solid var(--line);border-radius:14px;background:#fff;padding:20px;box-shadow:0 10px 28px rgba(10,46,91,.07);display:flex;flex-direction:column}
+.evaluator-head{display:grid;grid-template-columns:52px 1fr;gap:13px;align-items:start}
+.evaluator-initials{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;font-weight:700;font-size:.86rem;letter-spacing:.04em}
+.evaluator-card h3{margin:1px 0 4px;font-size:1.22rem;color:var(--navy);line-height:1.18}
+.evaluator-degree{margin:0;font-size:.79rem;font-weight:700;color:#42566d}
+.evaluator-affiliation{margin:4px 0 0;font-size:.72rem;color:var(--muted);line-height:1.4}
+.evaluator-tags{display:flex;gap:6px;flex-wrap:wrap;margin:15px 0}
+.evaluator-tags span{font-size:.62rem;text-transform:uppercase;letter-spacing:.035em;font-weight:700;color:var(--blue);background:#edf6fc;border:1px solid #d8ebf8;border-radius:999px;padding:5px 8px}
+.evaluator-card h4{font-family:Montserrat,Arial,sans-serif;font-size:.73rem;text-transform:uppercase;letter-spacing:.09em;color:var(--green);margin:2px 0 8px}
+.evaluator-card ul{margin:0;padding-left:17px;color:#526377;font-size:.78rem;line-height:1.55}
+.evaluator-card li+li{margin-top:5px}
+@media(max-width:980px){.purpose-grid{grid-template-columns:repeat(2,1fr)}.evaluator-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.committee-section-head{grid-template-columns:1fr;gap:16px}.purpose-grid,.committee-area-grid,.evaluator-grid{grid-template-columns:1fr}.committee-hero-stats{display:grid;grid-template-columns:1fr}.committee-hero-stats div{justify-content:flex-start}.committee-area-card{padding:18px}.evaluator-card{padding:18px}}
