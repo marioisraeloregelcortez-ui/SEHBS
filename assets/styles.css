@@ -736,3 +736,10 @@
   object-position:center;
   display:block;
 }
+.evaluator-photo--cutout{
+  background:linear-gradient(145deg,#f9fbfd,#e7eef4);
+  box-shadow:0 5px 14px rgba(10,46,91,.24);
+}
+.evaluator-photo--cutout img{
+  filter:drop-shadow(0 2px 2px rgba(10,46,91,.28));
+}
