@@ -662,3 +662,14 @@
 .evaluator-card li+li{margin-top:5px}
 @media(max-width:980px){.purpose-grid{grid-template-columns:repeat(2,1fr)}.evaluator-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.committee-section-head{grid-template-columns:1fr;gap:16px}.purpose-grid,.committee-area-grid,.evaluator-grid{grid-template-columns:1fr}.committee-hero-stats{display:grid;grid-template-columns:1fr}.committee-hero-stats div{justify-content:flex-start}.committee-area-card{padding:18px}.evaluator-card{padding:18px}}
+
+
+/* Local research banner: preserve left-side title when image is cropped */
+.local img{
+  object-position:left center!important;
+}
+@media(max-width:900px){
+  .local img{
+    object-position:center center!important;
+  }
+}
