@@ -15,6 +15,7 @@ weekly:{
   href:"https://doi.org/10.1038/s41467-026-74639-z"
 },
 latest:[
+{category:"Excercise and health",title:"Comparación entre analizadores de grasa corporal en adultos jóvenes",summary:"Los dispositivos mostraron diferencias individuales que desaconsejan intercambiarlos durante el seguimiento longitudinal.",journal:"Biophysica",image:"assets/evaluación_biomédica_de_composición_corporal.png",href:"https://doi.org/10.3390/biophysica6050090"},
 {category:"Excercise and health",title:"Entrenamiento multicomponente y envejecimiento saludable en mujeres",summary:"Doce semanas de entrenamiento mejoraron indicadores físicos y metabólicos en mujeres de mediana y mayor edad.",journal:"Sports",image:"assets/mujeres_mayores_entrenando_en_estudio_luminoso.png?v=1",href:"https://doi.org/10.3390/sports14050204"},
 {category:"Athletic performance",title:"Series cluster y ondulantes en peso muerto",summary:"Compara cómo distintas configuraciones de series modifican la respuesta de fatiga metabólica durante el peso muerto.",journal:"Sport Sciences for Health",image:"assets/cluster-deadlift-cover.png?v=1",href:"https://doi.org/10.1007/s11332-026-01766-x"},
 {category:"Athletic performance",title:"Estabilidad postural durante la media sentadilla en halterófilos",summary:"Analiza el control postural y la mecánica del movimiento durante la media sentadilla en halterófilos.",journal:"Bioengineering",image:"assets/athletic-postural-stability-cover-v3.webp",imageLabel:"Sports Science",href:"https://doi.org/10.3390/bioengineering13060711"},
