@@ -149,7 +149,7 @@ if(localCarousel&&Array.isArray(data.localLatest)&&data.localLatest.length){
   const next=localCarousel.querySelector('[data-local-next]');
   const progress=localCarousel.querySelector('[data-local-progress]');
   const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const intervalMs=10000;
+  const intervalMs=8000;
   let index=0;
   let timer=null;
   let pointerStartX=null;
