@@ -22,4 +22,52 @@ latest:[
 {category:"Biomedical sciences",title:"Quimiorresistencia a doxorrubicina en cáncer de mama triple negativo",summary:"Explora mecanismos celulares asociados con la resistencia a doxorrubicina en un modelo de cáncer de mama triple negativo.",journal:"Scientific Reports",image:"assets/biomedical-eif4e-doxorubicin-cover.webp?v=2",href:"https://doi.org/10.1038/s41598-025-31313-6"},
 {category:"Biomedical sciences",title:"Resistina y vesículas extracelulares en cáncer de próstata",summary:"Examina la relación entre resistina, vesículas extracelulares y procesos vinculados con la progresión tumoral.",journal:"Life",image:"assets/biomedical-prostate-cancer-cover.png",href:"https://doi.org/10.3390/life13122321"},
 {category:"Biomedical sciences",title:"Grasa visceral y riesgo metabólico en jóvenes mexicanos",summary:"Relaciona la adiposidad visceral con indicadores de riesgo metabólico en población joven mexicana.",journal:"Nutrición Clínica y Dietética Hospitalaria",image:"assets/biomedical-body-composition-cover.png?v=1",href:"https://doi.org/10.12873/452sollano"},
-{category:"Literature review",title:"Ejercicio y síndrome metabólico en niños y adolescentes",summary:"Revisa la evidencia sobre ejercicio como herramienta frente al síndrome metabólico en población infantil y adolescente.",journal:"Retos",image:"assets/literature-review-cover.png",href:"https://doi.org/10.47197/retos.v62.108003"}]};
+{category:"Literature review",title:"Ejercicio y síndrome metabólico en niños y adolescentes",summary:"Revisa la evidencia sobre ejercicio como herramienta frente al síndrome metabólico en población infantil y adolescente.",journal:"Retos",image:"assets/literature-review-cover.png",href:"https://doi.org/10.47197/retos.v62.108003"}],
+localLatest:[
+{
+  category:"Ejercicio y Salud",
+  title:"Comparación entre analizadores de grasa corporal en adultos jóvenes",
+  summary:"InBody 770, Omron HBF-514C, Tanita BC-533 y Skulpt Chisel mostraron diferencias individuales suficientemente amplias para desaconsejar su uso intercambiable en seguimientos longitudinales.",
+  journal:"Biophysica",
+  date:"2026",
+  image:"assets/evaluación_biomédica_de_composición_corporal.png",
+  href:"https://doi.org/10.3390/biophysica6050090"
+},
+{
+  category:"Rendimiento Deportivo",
+  title:"Estabilidad postural durante la media sentadilla en halterófilos",
+  summary:"Analiza el control postural y la mecánica del movimiento durante la media sentadilla en halterófilos, integrando variables biomecánicas relevantes para el rendimiento.",
+  journal:"Bioengineering",
+  date:"2026",
+  image:"assets/athletic-postural-stability-cover-v3.webp",
+  href:"https://doi.org/10.3390/bioengineering13060711"
+},
+{
+  category:"Rendimiento Deportivo",
+  title:"Series cluster y ondulantes en peso muerto",
+  summary:"Las series cluster favorecieron el mantenimiento de velocidad y potencia, mientras que la configuración ondulante produjo mayor estrés metabólico y una acumulación de lactato aproximadamente 35% superior.",
+  journal:"Sport Sciences for Health",
+  date:"2026",
+  image:"assets/cluster-deadlift-cover.png?v=1",
+  href:"https://doi.org/10.1007/s11332-026-01766-x"
+},
+{
+  category:"Ciencias Biomédicas",
+  title:"Nrf2 y procesos relacionados con metástasis en cáncer de mama quimiorresistente",
+  summary:"El estudio relacionó una mayor actividad de Nrf2 con migración e invasión celular y mostró que su silenciamiento mediante siRNA redujo significativamente la migración en el modelo experimental.",
+  journal:"International Journal of Molecular Sciences",
+  date:"2026",
+  image:"assets/icon-biomed-original.webp",
+  href:"https://doi.org/10.3390/ijms27104506"
+},
+{
+  category:"Ejercicio y Salud",
+  title:"Entrenamiento multicomponente y envejecimiento saludable en mujeres",
+  summary:"Doce semanas de entrenamiento mejoraron indicadores físicos y metabólicos en mujeres de mediana y mayor edad, reforzando el valor de las intervenciones multicomponente.",
+  journal:"Sports",
+  date:"2026",
+  image:"assets/multicomponent-training-cover.png",
+  href:"https://doi.org/10.3390/sports14050204"
+}
+]
+};
