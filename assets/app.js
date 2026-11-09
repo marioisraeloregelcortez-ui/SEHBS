@@ -27,6 +27,7 @@ const normalize=value=>(value||"")
   .trim();
 
 const params=new URLSearchParams(window.location.search);
+const searchQuery=params.get("q")||"";
 const categoryKey=params.get("category");
 const categoryConfig=CATEGORY_CONFIG[categoryKey]||null;
 
@@ -85,7 +86,6 @@ const menu=document.querySelector('.menu-btn'),navlinks=document.querySelector('
 if(menu&&navlinks)menu.addEventListener('click',()=>navlinks.classList.toggle('open'));
 
 const search=document.querySelector('[data-search]');
-const searchQuery=params.get("q")||"";
 
 function filterSearchResults(value){
   const q=normalize(value);
