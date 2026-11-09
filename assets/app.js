@@ -198,7 +198,7 @@ if(localCarousel&&Array.isArray(data.localLatest)&&data.localLatest.length){
   }
 
   function schedule(){
-    if(reduceMotion||document.hidden||timer) return;
+    if(reduceMotion||document.hidden||timer||localCarousel.matches(':hover')||localCarousel.matches(':focus-within')) return;
     resetProgress();
     timer=window.setTimeout(()=>{
       timer=null;
