@@ -747,3 +747,15 @@
 .card-media{position:relative}
 .card-media img{width:100%;aspect-ratio:16/9;object-fit:cover}
 .card-image-label{position:absolute;top:9px;left:10px;z-index:1;color:#fff;font-size:.54rem;font-weight:600;letter-spacing:.24em;line-height:1.2;text-transform:uppercase;text-shadow:0 1px 3px rgba(4,22,38,.85),0 0 5px rgba(4,22,38,.65)}
+
+
+/* Additional local research story */
+.local-more-section{border-top:1px solid var(--line)}
+.local-story-card{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(0,1.45fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 28px rgba(10,46,91,.07)}
+.local-story-card>img{width:100%;height:100%;min-height:320px;object-fit:cover}
+.local-story-copy{padding:28px 30px}
+.local-story-copy .badge{display:inline-block;margin-bottom:10px}
+.local-story-copy h3{font-size:1.8rem;line-height:1.15;margin:4px 0 12px;color:var(--navy)}
+.local-story-copy>p{color:#526377;line-height:1.65;font-size:.88rem}
+.local-story-copy .btn{margin-top:10px}
+@media(max-width:800px){.local-story-card{grid-template-columns:1fr}.local-story-card>img{min-height:220px;max-height:280px}.local-story-copy{padding:22px}.local-story-copy h3{font-size:1.5rem}}
