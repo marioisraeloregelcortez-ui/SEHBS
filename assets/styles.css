@@ -759,3 +759,46 @@
 .local-story-copy>p{color:#526377;line-height:1.65;font-size:.88rem}
 .local-story-copy .btn{margin-top:10px}
 @media(max-width:800px){.local-story-card{grid-template-columns:1fr}.local-story-card>img{min-height:220px;max-height:280px}.local-story-copy{padding:22px}.local-story-copy h3{font-size:1.5rem}}
+
+
+/* Latest Research from UABC carousel */
+.local-carousel-heading{align-items:flex-end}
+.local-carousel-intro{max-width:760px;margin:.7rem 0 0;color:var(--muted);font-size:.84rem;line-height:1.6}
+.local-carousel{position:relative;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 12px 32px rgba(10,46,91,.08);overflow:hidden}
+.local-carousel-viewport{overflow:hidden;touch-action:pan-y}
+.local-carousel-track{display:flex;width:100%;transition:transform .65s cubic-bezier(.22,.61,.36,1);will-change:transform}
+.local-carousel-slide{min-width:100%;display:grid;grid-template-columns:minmax(320px,.9fr) minmax(0,1.35fr);background:#fff}
+.local-carousel-media{position:relative;min-height:390px;background:linear-gradient(145deg,#edf5f8,#e6f2ed);overflow:hidden}
+.local-carousel-media img{width:100%;height:100%;min-height:390px;object-fit:cover}
+.local-carousel-count{position:absolute;left:18px;bottom:18px;padding:7px 10px;border-radius:999px;background:rgba(7,45,80,.88);color:#fff;font-size:.67rem;font-weight:700;letter-spacing:.1em;backdrop-filter:blur(5px)}
+.local-carousel-copy{padding:34px 36px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.local-carousel-copy .badge{margin-bottom:11px}
+.local-carousel-copy h3{font-size:2rem;line-height:1.12;margin:0 0 14px;color:var(--navy)}
+.local-carousel-copy>p{margin:0;color:#526377;line-height:1.7;font-size:.9rem}
+.local-carousel-copy .local-feature-meta{width:100%;margin:18px 0 19px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.local-carousel-footer{display:flex;align-items:center;justify-content:center;gap:18px;padding:14px 18px;border-top:1px solid var(--line);background:#fbfdfe}
+.local-carousel-arrow{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy);font-size:1.05rem;cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.local-carousel-arrow:hover,.local-carousel-arrow:focus-visible{background:var(--navy);color:#fff;border-color:var(--navy);transform:translateY(-1px)}
+.local-carousel-dots{display:flex;align-items:center;gap:9px}
+.local-carousel-dot{width:9px;height:9px;border-radius:50%;border:0;padding:0;background:#c8d4dd;cursor:pointer;transition:width .25s ease,border-radius .25s ease,background .25s ease}
+.local-carousel-dot.active{width:28px;border-radius:999px;background:var(--green)}
+.local-carousel-progress{height:3px;background:#e7eef3;overflow:hidden}
+.local-carousel-progress span{display:block;width:100%;height:100%;background:var(--green);transform-origin:left center;transform:scaleX(0)}
+@keyframes localCarouselProgress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(max-width:850px){
+  .local-carousel-slide{grid-template-columns:1fr}
+  .local-carousel-media,.local-carousel-media img{min-height:260px;max-height:320px}
+  .local-carousel-copy{padding:26px 24px}
+  .local-carousel-copy h3{font-size:1.65rem}
+}
+@media(max-width:560px){
+  .local-carousel-media,.local-carousel-media img{min-height:220px;max-height:250px}
+  .local-carousel-copy{padding:22px 20px}
+  .local-carousel-copy h3{font-size:1.45rem}
+  .local-carousel-copy>p{font-size:.84rem}
+  .local-carousel-footer{gap:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .local-carousel-track,.local-carousel-arrow,.local-carousel-dot{transition:none}
+  .local-carousel-progress{display:none}
+}

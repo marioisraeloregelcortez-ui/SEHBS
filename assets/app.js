@@ -140,6 +140,118 @@ if(searchQuery){
   if(reset) reset.hidden=false;
 }
 
+
+const localCarousel=document.querySelector('[data-local-carousel]');
+if(localCarousel&&Array.isArray(data.localLatest)&&data.localLatest.length){
+  const track=localCarousel.querySelector('[data-local-carousel-track]');
+  const dotsWrap=localCarousel.querySelector('[data-local-dots]');
+  const prev=localCarousel.querySelector('[data-local-prev]');
+  const next=localCarousel.querySelector('[data-local-next]');
+  const progress=localCarousel.querySelector('[data-local-progress]');
+  const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const intervalMs=10000;
+  let index=0;
+  let timer=null;
+  let pointerStartX=null;
+
+  const safe=value=>String(value||'')
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#039;');
+
+  track.innerHTML=data.localLatest.map((item,i)=>`
+    <article class="local-carousel-slide" aria-hidden="${i===0?'false':'true'}">
+      <div class="local-carousel-media">
+        <img src="${safe(item.image)}" alt="Imagen editorial de ${safe(item.title)}" loading="${i===0?'eager':'lazy'}">
+        <span class="local-carousel-count">${String(i+1).padStart(2,'0')} / ${String(data.localLatest.length).padStart(2,'0')}</span>
+      </div>
+      <div class="local-carousel-copy">
+        <span class="badge">${safe(item.category)}</span>
+        <h3>${safe(item.title)}</h3>
+        <p>${safe(item.summary)}</p>
+        <div class="local-feature-meta">${safe(item.journal)} · ${safe(item.date)}</div>
+        <a class="btn green" href="${safe(item.href)}">Leer artículo original →</a>
+      </div>
+    </article>`).join('');
+
+  dotsWrap.innerHTML=data.localLatest.map((item,i)=>`
+    <button type="button" class="local-carousel-dot${i===0?' active':''}" data-local-dot="${i}" aria-label="Ver publicación ${i+1}: ${safe(item.title)}" aria-current="${i===0?'true':'false'}"></button>`).join('');
+
+  const slides=[...track.querySelectorAll('.local-carousel-slide')];
+  const dots=[...dotsWrap.querySelectorAll('[data-local-dot]')];
+
+  function resetProgress(){
+    if(!progress||reduceMotion) return;
+    progress.style.animation='none';
+    void progress.offsetWidth;
+    progress.style.animation=`localCarouselProgress ${intervalMs}ms linear forwards`;
+  }
+
+  function stop(){
+    if(timer){
+      window.clearTimeout(timer);
+      timer=null;
+    }
+    if(progress) progress.style.animationPlayState='paused';
+  }
+
+  function schedule(){
+    if(reduceMotion||document.hidden||timer||localCarousel.matches(':hover')||localCarousel.matches(':focus-within')) return;
+    resetProgress();
+    timer=window.setTimeout(()=>{
+      timer=null;
+      show(index+1,{scheduleNext:false});
+      schedule();
+    },intervalMs);
+  }
+
+  function show(nextIndex,{scheduleNext=true}={}){
+    index=(nextIndex+slides.length)%slides.length;
+    track.style.transform=`translateX(-${index*100}%)`;
+    slides.forEach((slide,i)=>slide.setAttribute('aria-hidden',i===index?'false':'true'));
+    dots.forEach((dot,i)=>{
+      dot.classList.toggle('active',i===index);
+      dot.setAttribute('aria-current',i===index?'true':'false');
+    });
+    if(scheduleNext){
+      stop();
+      schedule();
+    }
+  }
+
+  prev?.addEventListener('click',()=>show(index-1));
+  next?.addEventListener('click',()=>show(index+1));
+  dots.forEach(dot=>dot.addEventListener('click',()=>show(Number(dot.dataset.localDot))));
+
+  localCarousel.addEventListener('mouseenter',stop);
+  localCarousel.addEventListener('mouseleave',schedule);
+  localCarousel.addEventListener('focusin',stop);
+  localCarousel.addEventListener('focusout',e=>{
+    if(!localCarousel.contains(e.relatedTarget)) schedule();
+  });
+
+  localCarousel.addEventListener('pointerdown',e=>{
+    if(e.pointerType==='mouse') return;
+    pointerStartX=e.clientX;
+  });
+  localCarousel.addEventListener('pointerup',e=>{
+    if(pointerStartX===null) return;
+    const delta=e.clientX-pointerStartX;
+    pointerStartX=null;
+    if(Math.abs(delta)<45) return;
+    show(delta<0?index+1:index-1);
+  });
+
+  document.addEventListener('visibilitychange',()=>{
+    if(document.hidden) stop();
+    else schedule();
+  });
+
+  schedule();
+}
+
 function toast(msg){
   const t=document.querySelector('.toast');
   if(!t)return;
